@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffe08a;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #d62828;
+}
+
+.toy {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
+  background-color: #f77f00;
+  border: 10px solid #d62828;
+  border-radius: 50%;
+}
+
+#output {
+  position: absolute;
+  top: 230px;
+  left: 145px;
+  width: 270px;
+  min-height: 90px;
+  background-color: white;
+  border: 5px solid #003049;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+  color: #003049;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toy button {
+  position: absolute;
+  width: 130px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid white;
+  color: white;
+}
+
+#whoBtn {
+  top: 40px;
+  left: 235px;
+  background-color: #d62828;
+}
+
+#actionBtn {
+  top: 180px;
+  right: 35px;
+  background-color: #003049;
+}
+
+#placeBtn {
+  bottom: 80px;
+  right: 90px;
+  background-color: #669bbc;
+}
+
+#objectBtn {
+  bottom: 80px;
+  left: 90px;
+  background-color: #2a9d8f;
+}
+
+#endingBtn {
+  top: 180px;
+  left: 35px;
+  background-color: #6a4c93;
+}
+
+.controls button {
+  background-color: #003049;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin: 5px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 700px) {
+  .toy {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px 0;
+  }
+
+  #output,
+  .toy button {
+    position: static;
+    display: block;
+    margin: 12px auto;
+  }
+
+  #output {
+    width: 75%;
+  }
+}
